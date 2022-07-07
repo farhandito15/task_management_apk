@@ -38,7 +38,7 @@ class LoginView extends GetView<LoginController> {
                           mainAxisAlignment: MainAxisAlignment.center,
                           children: const [
                             Text(
-                              'Youkoso',
+                              'Selamat Datang',
                               style: TextStyle(
                                 color: Colors.white,
                                 fontSize: 70,
