@@ -45,7 +45,7 @@ class LoginView extends GetView<LoginController> {
                               ),
                             ),
                             Text(
-                              'Silahkan Login',
+                              'Silahkan Masuk',
                               style: TextStyle(
                                 color: Colors.white,
                                 fontSize: 30,
