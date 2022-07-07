@@ -23,6 +23,8 @@ class AppPages {
       name: _Paths.HOME,
       page: () => HomeView(),
       binding: HomeBinding(),
+      transition: Transition.downToUp,
+      transitionDuration: Duration(seconds: 2),
     ),
     GetPage(
       name: _Paths.LOGIN,
