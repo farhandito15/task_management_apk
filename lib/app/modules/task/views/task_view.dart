@@ -2,9 +2,9 @@ import 'package:flutter/material.dart';
 
 import 'package:get/get.dart';
 import 'package:ionicons/ionicons.dart';
-import 'package:task_management_app2/app/utils/style/AppColors.dart';
-import 'package:task_management_app2/app/utils/widget/header.dart';
-import 'package:task_management_app2/app/utils/widget/sidebar.dart';
+import 'package:task_management_apk/app/utils/style/AppColors.dart';
+import 'package:task_management_apk/app/utils/widget/header.dart';
+import 'package:task_management_apk/app/utils/widget/sidebar.dart';
 
 import '../controllers/friends_controller.dart';
 
