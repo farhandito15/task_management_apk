@@ -6,7 +6,7 @@ import 'package:task_management_apk/app/utils/style/AppColors.dart';
 import 'package:task_management_apk/app/utils/widget/header.dart';
 import 'package:task_management_apk/app/utils/widget/sidebar.dart';
 
-import '../controllers/friends_controller.dart';
+import '../controllers/task_controller.dart';
 
 class TaskView extends GetView<TaskController> {
   
