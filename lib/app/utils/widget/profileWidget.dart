@@ -1,6 +1,6 @@
-
+import 'package:get/get.dart';
 import 'package:flutter/material.dart';
-
+import 'package:task_management_apk/app/utils/style/AppColors.dart';
 
 class ProfilWidget extends StatelessWidget {
   const ProfilWidget({
