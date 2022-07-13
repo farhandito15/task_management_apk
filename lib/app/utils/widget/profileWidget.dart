@@ -34,14 +34,14 @@ class ProfilWidget extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.start,
           children: const [
             Text(
-                'Muslimahhh cute',
+                'Farhan Dito',
                   style: TextStyle(
                   color: appColors.primaryText,
                   fontSize: 35,
                  ),
               ),
             Text(
-                'Muslimahhh2703@gmail.com',
+                'farditbilhar@gmail.com',
                   style: TextStyle(
                   color: appColors.primaryText,
                   fontSize: 15,
