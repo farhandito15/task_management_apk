@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 
 import '../style/AppColors.dart';
-class MyFriends extends StatelessWidget {
-  const MyFriends({
+class myFriends extends StatelessWidget {
+  const myFriends({
     Key? key,
   }) : super(key: key);
 
@@ -11,7 +11,7 @@ class MyFriends extends StatelessWidget {
     return Expanded(
       child: SingleChildScrollView(
         child: Padding(
-          padding: const EdgeInsets.all(20.0),
+          padding: const EdgeInsets.all(10.0),
           child: Column(
             children: [
               Row(
@@ -19,57 +19,62 @@ class MyFriends extends StatelessWidget {
                   Text(
                     'My Friends',
                     style: TextStyle(
-                      color: AppColors.primaryText,
-                      fontSize: 30,
+                      color: appColors.primaryText,
+                      fontSize: 20,
                     ),
                   ),
                   Spacer(),
                   GestureDetector(
                     onTap: () => Get.toNamed(Routes.FRIENDS),
                     child: Text(
-                      'More',
-                      style: TextStyle(
-                        color: AppColors.primaryText,
-                        fontSize: 20,
-                      ),
+                    'more',
+                    style: TextStyle(
+                      color: appColors.primaryText,
+                      fontSize: 15,
                     ),
                   ),
+                ),
                   Icon(
-                    Ionicons.chevron_forward,
-                    color: AppColors.primaryText,
-                  )
+                    Icons.chevron_right_rounded,
+                    color: appColors.primaryText,
+                  ),
                 ],
               ),
               const SizedBox(
-                height: 20,
+                height: 15,
               ),
               SizedBox(
-                height: 400,
+                height: 300,
                 child: GridView.builder(
-                    shrinkWrap: true,
-                    itemCount: 8,
-                    gridDelegate:
-                        const SliverGridDelegateWithFixedCrossAxisCount(
-                            crossAxisCount: 3,
-                            crossAxisSpacing: 20,
-                            mainAxisSpacing: 20),
-                    itemBuilder: (context, index) {
-                      return Column(
-                        children: [
-                          ClipRRect(
-                            borderRadius: BorderRadius.circular(100),
-                            child: const Image(
-                              image: NetworkImage(
-                                  'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSibTMP3266859JrPVaoYmIXXinEtq9Bn_hfg&usqp=CAU'),
-                            ),
+                shrinkWrap: true,
+                itemCount: 6,
+                  gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
+                    crossAxisCount: context.isPhone ? 2 : 3, 
+                    crossAxisSpacing: 20, 
+                    mainAxisSpacing: 20),
+                  itemBuilder: (context, index) {
+                    return Column(
+                      children: [
+                        ClipRRect(
+                          borderRadius:
+                              BorderRadius.circular(90),
+                          child: const CircleAvatar(
+                            backgroundColor:
+                                Colors.amber,
+                            radius: 60,
+                            foregroundImage: NetworkImage(
+                                'https://yt3.ggpht.com/a/AATXAJyUEgqkrx-_Vhz-cpHNMfONR22tfRaCScNzyg=s900-c-k-c0xffffffff-no-rj-mo'),
                           ),
-                          const Text(
-                            'Marcellia',
-                            style: TextStyle(color: AppColors.primaryText),
+                        ),
+                        Text(
+                          'Farhan Dito', 
+                          style: TextStyle(
+                            color: appColors.primaryText
                           ),
-                        ],
-                      );
-                    }),
+                        ),
+                      ],
+                    );
+                })
               )
             ],
           ),
