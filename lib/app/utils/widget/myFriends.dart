@@ -1,4 +1,5 @@
 import 'dart:developer';
+import 'dart:js';
 
 import 'package:flutter/material.dart';
 import 'package:task_management_apk/app/routes/app_pages.dart';
@@ -29,7 +30,7 @@ class myFriends extends StatelessWidget {
                   ),
                   Spacer(),
                   GestureDetector(
-                    onTap: () => Get.toNamed(Routes.HOME),
+                    onTap: () => Get.toNamed(Routes.FRIENDS),
                     child: Text(
                       'more',
                       style: TextStyle(
@@ -51,7 +52,7 @@ class myFriends extends StatelessWidget {
                       shrinkWrap: true,
                       itemCount: 6,
                       gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
-                          crossAxisCount: context.isPhone ? 2 : 3,
+                          crossAxisCount: context.debugDoingBuild ? 2 : 3,
                           crossAxisSpacing: 20,
                           mainAxisSpacing: 20),
                       itemBuilder: (context, index) {
