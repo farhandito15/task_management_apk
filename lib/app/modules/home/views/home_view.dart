@@ -71,7 +71,8 @@ class HomeView extends GetView<HomeController> {
                               ],
                             ),
                             const Spacer(),
-                            const Icon(.notifications,
+                            const Icon(
+                              Ionicons.notifications,
                               color: AppColors.primaryText,
                               size: 30,
                             ),
