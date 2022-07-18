@@ -1,9 +1,10 @@
 import 'dart:html';
 
 import 'package:task_management_apk/app/routes/app_pages.dart';
-import 'package:task_management_apk/app/utils/style/appColors.dart';
-import 'package:task_management_apk/app/utils/widget/headers.dart';
+import 'package:task_management_apk/app/utils/styles/appColors.dart';
+import 'package:task_management_apk/app/utils/widget/header.dart';
 import 'package:task_management_apk/app/utils/widget/myFriends.dart';
+import 'package:task_management_apk/app/utils/widget/myTask.dart';
 import 'package:task_management_apk/app/utils/widget/sidebar.dart';
 import 'package:task_management_apk/app/utils/widget/upcomingTask.dart';
 import 'package:flutter/material.dart';
@@ -13,8 +14,6 @@ import 'package:get/get.dart';
 import '../controllers/home_controller.dart';
 
 class HomeView extends GetView<HomeController> {
-
-  
   final GlobalKey<ScaffoldState> _drawerKey = GlobalKey();
 
   @override
@@ -72,8 +71,7 @@ class HomeView extends GetView<HomeController> {
                               ],
                             ),
                             const Spacer(),
-                            const Icon(
-                              Ionicons.notifications,
+                            const Icon(.notifications,
                               color: AppColors.primaryText,
                               size: 30,
                             ),
@@ -135,7 +133,7 @@ class HomeView extends GetView<HomeController> {
                                   child: Row(
                                     children: const [
                                       UpcomingTask(),
-                                      MyFriends(),
+                                      myFriends(),
                                     ],
                                   ),
                                 )
