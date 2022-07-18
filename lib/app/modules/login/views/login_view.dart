@@ -110,8 +110,10 @@ class LoginView extends GetView<LoginController> {
                     FloatingActionButton.extended(
                       onPressed: () => Get.toNamed(Routes.HOME),
                       label: const Text('Sign In With Google'),
-                      icon:
-                          const Icon(Ionicons.logo_google, color: Colors.white),
+                      icon: const Icon(
+                        Ionicons.logo_google,
+                        color: Colors.white,
+                      ),
                     )
                   ]),
             ),

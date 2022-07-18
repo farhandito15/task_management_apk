@@ -1,7 +1,6 @@
-
 import 'package:flutter/material.dart';
 
-import '../style/AppColors.dart';
+import '../styles/AppColors.dart';
 
 class UpcomingTask extends StatelessWidget {
   const UpcomingTask({
